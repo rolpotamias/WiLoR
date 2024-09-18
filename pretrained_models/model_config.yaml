@@ -58,7 +58,7 @@ extras:
 exp_name: WiLoR
 MANO:
   DATA_DIR: mano_data
-  MODEL_PATH: ${MANO.DATA_DIR}/mano
+  MODEL_PATH: ${MANO.DATA_DIR}
   GENDER: neutral
   NUM_HAND_JOINTS: 15
   MEAN_PARAMS: ${MANO.DATA_DIR}/mano_mean_params.npz
