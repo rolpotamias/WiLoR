@@ -13,7 +13,7 @@
 <a href='https://colab.research.google.com/'><img src='https://colab.research.google.com/assets/colab-badge.svg'></a>
 </div>
 
-This is the official implementation of **[WiLoR](https://arc2face.github.io/)**, an state-of-the-art hand localization and reconstruction model:
+This is the official implementation of **[WiLoR](https://rolpotamias.github.io/WiLoR/)**, an state-of-the-art hand localization and reconstruction model:
 
 ![teaser](assets/teaser.png)
 
