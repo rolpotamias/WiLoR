@@ -38,7 +38,7 @@ wget https://huggingface.co/spaces/rolpotamias/WiLoR/resolve/main/pretrained_mod
 wget https://huggingface.co/spaces/rolpotamias/WiLoR/resolve/main/pretrained_models/wilor_final.ckpt -P ./pretrained_models/
 ```
 It is also required to download MANO model from [MANO website](https://mano.is.tue.mpg.de). 
-Create an account by clicking Sign Up and download the models (mano_v*_*.zip). Unzip and place the right hand model `MANO_RIGHT.pkl` under the `mano_data/mano/` folder. 
+Create an account by clicking Sign Up and download the models (mano_v*_*.zip). Unzip and place the right hand model `MANO_RIGHT.pkl` under the `mano_data/` folder. 
 Note that MANO model falls under the [MANO license](https://mano.is.tue.mpg.de/license.html).
 ## Demo
 ```bash
