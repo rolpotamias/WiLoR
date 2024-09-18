@@ -1,0 +1,58 @@
+ARCTIC-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/arctic-train/{000000..000176}.tar
+  epoch_size: 177000
+BEDLAM-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/bedlam-train/{000000..000300}.tar
+  epoch_size: 301000
+COCOW-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/cocow-train/{000000..000036}.tar
+  epoch_size: 78666
+DEX-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/dex-train/{000000..000406}.tar
+  epoch_size: 406888
+FREIHAND-MOCAP:
+  DATASET_FILE: wilor_training_data/freihand_mocap.npz
+FREIHAND-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/freihand-train/{000000..000130}.tar
+  epoch_size: 130240
+H2O3D-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/h2o3d-train/{000000..000060}.tar
+  epoch_size: 121996
+HALPE-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/halpe-train/{000000..000022}.tar
+  epoch_size: 34289
+HO3D-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/ho3d-train/{000000..000083}.tar
+  epoch_size: 83325
+HOT3D-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/hot3d-train/{000000..000571}.tar
+  epoch_size: 572000
+INTERHAND26M-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/interhand26m-train/{000000..001056}.tar
+  epoch_size: 1424632
+MPIINZSL-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/mpiinzsl-train/{000000..000015}.tar
+  epoch_size: 15184
+MTC-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/mtc-train/{000000..000306}.tar
+  epoch_size: 363947
+REINTER-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/reinter-train/{000000..000418}.tar
+  epoch_size: 419000
+RHD-TRAIN:
+  TYPE: ImageDataset
+  URLS: wilor_training_data/dataset_tars/rhd-train/{000000..000041}.tar
+  epoch_size: 61705
