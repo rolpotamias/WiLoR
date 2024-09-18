@@ -17,3 +17,4 @@ pyrootutils
 rich
 webdataset
 gradio
+ultralytics==8.1.34
