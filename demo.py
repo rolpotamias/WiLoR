@@ -41,7 +41,6 @@ def main():
 
     # Get all demo images ends with .jpg or .png
     img_paths = [img for end in args.file_type for img in Path(args.img_folder).glob(end)]
-    
     # Iterate over all images in folder
     for img_path in img_paths:
         img_cv2 = cv2.imread(str(img_path))
@@ -50,8 +49,6 @@ def main():
         is_right  = []
         for det in detections: 
             Bbox = det.boxes.data.cpu().detach().squeeze().numpy()
-            #boxes[:, :2] -= np.int32(0.1 * boxes[:, :2])
-            #boxes[:, 2:] += np.int32(0.1 * boxes[:, 2:])
             is_right.append(det.boxes.cls.cpu().detach().squeeze().item())
             bboxes.append(Bbox[:4].tolist())
         
@@ -66,7 +63,8 @@ def main():
         all_cam_t = []
         all_right = []
         all_joints= []
-    
+        all_kpts  = []
+        
         for batch in dataloader: 
             batch = recursive_to(batch, device)
     
@@ -96,11 +94,14 @@ def main():
                 verts[:,0]  = (2*is_right-1)*verts[:,0]
                 joints[:,0] = (2*is_right-1)*joints[:,0]
                 cam_t = pred_cam_t_full[n]
+                kpts_2d = project_full_img(verts, cam_t, scaled_focal_length, img_size[n])
                 
                 all_verts.append(verts)
                 all_cam_t.append(cam_t)
                 all_right.append(is_right)
                 all_joints.append(joints)
+                all_kpts.append(kpts_2d)
+                
                 
                 # Save all meshes to disk
                 if args.save_mesh:
@@ -123,6 +124,19 @@ def main():
             input_img_overlay = input_img[:,:,:3] * (1-cam_view[:,:,3:]) + cam_view[:,:,:3] * cam_view[:,:,3:]
 
             cv2.imwrite(os.path.join(args.out_folder, f'{img_fn}.jpg'), 255*input_img_overlay[:, :, ::-1])
+
+def project_full_img(points, cam_trans, focal_length, img_res): 
+    camera_center = [img_res[0] / 2., img_res[1] / 2.]
+    K = torch.eye(3) 
+    K[0,0] = focal_length
+    K[1,1] = focal_length
+    K[0,2] = camera_center[0]
+    K[1,2] = camera_center[1]
+    points = points + cam_trans
+    points = points / points[..., -1:] 
+    
+    V_2d = (K @ points.T).T 
+    return V_2d[..., :-1]
 
 if __name__ == '__main__':
     main()
