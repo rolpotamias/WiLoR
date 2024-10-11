@@ -30,7 +30,7 @@ git clone --recursive https://github.com/rolpotamias/WiLoR.git
 cd WiLoR
 ```
 
-The code has been tested with PyTorch 2.0.0 and CUDA 11.7. It is suggested to use an anaconda encironment to install the the required dependencies:
+The code has been tested with PyTorch 2.0.0 and CUDA 11.7. It is suggested to use an anaconda environment to install the the required dependencies:
 ```bash
 conda create --name wilor python=3.10
 conda activate wilor
