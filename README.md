@@ -25,7 +25,8 @@ This is the official implementation of **[WiLoR](https://rolpotamias.github.io/W
 ![teaser](assets/teaser.png)
 
 ## Installation
-#### [Update] Thanks to [@warmshao](https://github.com/warmshao) WiLoR can now be installed using a single pip command:  
+### [Update] Quick Installation
+Thanks to [@warmshao](https://github.com/warmshao) WiLoR can now be installed using a single pip command:  
 ```
 pip install git+https://github.com/warmshao/WiLoR-mini
 ```
@@ -33,6 +34,7 @@ Please head to [WiLoR-mini](https://github.com/warmshao/WiLoR-mini) for addition
 
 **Note:** the above code is a simplified version of WiLoR and can be used for demo only. 
 If you wish to use WiLoR for other tasks it is suggested to follow the original installation instructued bellow: 
+### Original Installation
 ```
 git clone --recursive https://github.com/rolpotamias/WiLoR.git
 cd WiLoR
