@@ -7,6 +7,8 @@
 <sup>1</sup>Imperial College London, UK <br>
 <sup>2</sup>Shanghai Jiao Tong University, China
 
+<font color="blue"><strong>CVPR 2025</strong></font> 
+
 <a href='https://rolpotamias.github.io/WiLoR/'><img src='https://img.shields.io/badge/Project-Page-blue'></a>
 <a href='https://arxiv.org/abs/2409.12259'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
 <a href='https://huggingface.co/spaces/rolpotamias/WiLoR'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Demo-green'></a>
