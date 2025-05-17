@@ -69,7 +69,7 @@ You can start a local demo for inference by running:
 python gradio_demo.py
 ```
 ## WHIM Dataset
-The dataset will be released soon. 
+To download WHIM dataset please follow the instructions [here](./whim/Dataset_instructions.md)
 
 ## Acknowledgements
 Parts of the code are taken or adapted from the following repos:
