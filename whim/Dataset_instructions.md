@@ -5,7 +5,7 @@
 The image annotations can be downloaded from the following Dropbox:
 
 ```
-https://www.dropbox.com/scl/fo/ukvdpfjpagd5fmymfk268/AFm1t47rpCSxVrZvftZOaUA?rlkey=iixr3oea0u4et4mm4cjfldiia&st=bg7r369r&dl=0
+https://drive.google.com/drive/folders/1d9Fw7LfnF5oJuA6yE8T3xA-u9p6H5ObZ
 ```
 
 **Images** 
