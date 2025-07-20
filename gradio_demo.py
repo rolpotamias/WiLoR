@@ -182,10 +182,10 @@ with gr.Blocks(title="WiLoR: End-to-end 3D hand localization and reconstruction 
             ['./demo_img/test2.png'], 
             ['./demo_img/test3.jpg'], 
             ['./demo_img/test4.jpg'],
-            ['./demo_img/test5.jpeg'] 
-            ['./demo_img/test6.jpg'] 
-            ['./demo_img/test7.jpg'] 
-            ['./demo_img/test8.jpg'] 
+            ['./demo_img/test5.jpeg'],
+            ['./demo_img/test6.jpg'], 
+            ['./demo_img/test7.jpg'],
+            ['./demo_img/test8.jpg'], 
             ], 
             inputs=input_image)
 
