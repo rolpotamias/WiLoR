@@ -2,10 +2,19 @@
 
 **Annotations** 
 
-The image annotations can be downloaded from the following Dropbox:
+The image annotations can be downloaded from the following Drive:
 
 ```
 https://drive.google.com/drive/folders/1d9Fw7LfnF5oJuA6yE8T3xA-u9p6H5ObZ
+```
+
+**[Alternative]**: The image annotations can be also downloaded from Hugging Face:
+```
+https://huggingface.co/datasets/rolpotamias/WHIM
+```
+If you are using Hugging Face you might need to merge the training zip files into a single file before uncompressing: 
+```
+cat train_split.zip* > ~/train_split.zip
 ```
 
 **Images** 
