@@ -20,7 +20,7 @@ from wilor.models import WiLoR, load_wilor
 from wilor.utils import recursive_to
 from wilor.datasets.vitdet_dataset import ViTDetDataset, DEFAULT_MEAN, DEFAULT_STD
 from wilor.utils.renderer import Renderer, cam_crop_to_full
-device = torch.device('cpu') if torch.cuda.is_available() else torch.device('cuda')
+device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
 
 LIGHT_PURPLE=(0.25098039,  0.274117647,  0.65882353)
 
